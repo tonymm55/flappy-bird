@@ -2,8 +2,8 @@ import React from "react";
 import { View } from "react-native";
 
 const Bird = ({birdBottom, birdLeft}) => {
-    const birdWidth = 75
-    const birdHeight = 50
+    const birdWidth = 60
+    const birdHeight = 60 //middle of height =30, hence the 30 references throughout the code. Hardcoded!
 
     return (
         <View style={{
@@ -15,7 +15,6 @@ const Bird = ({birdBottom, birdLeft}) => {
             bottom: birdBottom - (birdHeight/2),
         }}/>
     )
-
 }
 
 export default Bird
